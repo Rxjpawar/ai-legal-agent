@@ -5,6 +5,8 @@ from langchain_qdrant import QdrantVectorStore
 from langchain_huggingface import HuggingFaceEmbeddings
 from qdrant_client import QdrantClient
 from qdrant_client.models import TextIndexParams
+from pathlib import Path
+
 
 QDRANT_URL = "http://localhost:6333"
 COLLECTION_NAME = "legal_vectors"
@@ -16,8 +18,8 @@ embedding_model = HuggingFaceEmbeddings(
 )
 
 def build_vector_store():
-
-    data_path = Path("data/legal_corpus")
+    BASE_DIR = Path(__file__).resolve().parents[2]
+    data_path = BASE_DIR / "data" / "legal_corpus"
 
     documents = []
 
