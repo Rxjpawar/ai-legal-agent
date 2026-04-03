@@ -1,7 +1,7 @@
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
-from app.rag.retriever import retrieve_documents
+from app.rag_model.retriever import retrieve_documents
 
 load_dotenv()
 

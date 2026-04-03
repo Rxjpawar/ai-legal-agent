@@ -1,5 +1,5 @@
-from app.workflow.graph import build_graph
-from app.rag.vector_store import build_vector_store
+from app.graph.graph import build_graph
+from app.rag_model.vector_store import build_vector_store
 
 def main():
     build_vector_store()

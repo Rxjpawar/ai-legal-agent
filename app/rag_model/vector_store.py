@@ -47,4 +47,4 @@ def build_vector_store():
         field_schema=TextIndexParams(type="text")
     )
 
-    print("Legal documents indexed successfully")
+    print("legal documents indexed successfully")
