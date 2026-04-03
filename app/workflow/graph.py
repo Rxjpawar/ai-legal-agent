@@ -2,10 +2,10 @@ from typing_extensions import TypedDict
 from langgraph.graph import StateGraph
 from langgraph.constants import START, END
 
-from agents.research_agent import research_agent
-from agents.analysis_agent import analysis_agent
-from agents.drafting_agent import drafting_agent
-from agents.review_agent import review_agent
+from app.agents.research_agent import research_agent
+from app.agents.analysis_agent import analysis_agent
+from app.agents.drafting_agent import drafting_agent
+from app.agents.review_agent import review_agent
 
 class State(TypedDict):
     query: str
