@@ -2,8 +2,8 @@ from workflow.graph import build_graph
 from rag.vector_store import build_vector_store
 
 def main():
+    build_vector_store()
     while True:
-        # build_vector_store()
         query = input("Ask Question: ")
         if query.lower()=="exit":
             break
